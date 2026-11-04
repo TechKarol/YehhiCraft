@@ -1,0 +1,25 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#14181a"><title>YehhiCraft</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css"></head><body>
+<div id="toast" hidden></div>
+<main id="menu">
+<section class="scr" id="s-main"><img class="logo" src="assets/images/logo.svg" alt="YEHHICRAFT">
+<button data-act="play" data-i18n="play"></button><button data-go="servers" data-i18n="multi"></button>
+<button data-go="settings" data-i18n="settings"></button><button data-go="skins" data-i18n="skins"></button>
+<button data-go="versions" data-i18n="versions"></button><button data-go="info" data-i18n="info"></button>
+<p id="verInfo"></p><p id="clientInfo"></p><p id="err" hidden></p></section>
+<section class="scr" id="s-settings" hidden><h2 data-i18n="settings"></h2><div id="form"></div><p class="note" data-i18n="setnote"></p>
+<button data-act="full" data-i18n="fs"></button><button data-go="main" data-i18n="back"></button></section>
+<section class="scr" id="s-servers" hidden><h2 data-i18n="multi"></h2><ul id="srvList"></ul>
+<input id="sName" maxlength="40" data-ph="name"><input id="sAddr" maxlength="200" data-ph="addr" autocapitalize="off">
+<button data-act="savesrv" data-i18n="save"></button><p id="sMsg" class="note"></p><button data-go="main" data-i18n="back"></button></section>
+<section class="scr" id="s-skins" hidden><h2 data-i18n="skins"></h2><p data-i18n="skinsTxt"></p>
+<button data-act="play" data-i18n="play"></button><button data-go="main" data-i18n="back"></button></section>
+<section class="scr" id="s-versions" hidden><h2 data-i18n="versions"></h2><ul id="verList"></ul><button data-go="main" data-i18n="back"></button></section>
+<section class="scr" id="s-info" hidden><h2 data-i18n="info"></h2><p data-i18n="infoTxt"></p><button data-go="main" data-i18n="back"></button></section>
+</main>
+<section id="game" hidden><iframe id="frame" title="Eaglercraft" allow="fullscreen; autoplay; pointer-lock; gamepad"></iframe>
+<div id="hud"></div><div id="gbar"><button data-act="back">☰</button><button data-act="restart">⟳</button><button data-act="full">⛶</button></div></section>
+<script type="module" src="assets/js/main.js"></script></body></html>
